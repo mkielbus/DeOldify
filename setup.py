@@ -5,9 +5,9 @@ def get_description():
     return "Deep Learning library for colorizing and restoring old images and video"
 
 
-# def get_long_description():
-#     with open("README.md") as f:
-#         return f.read()
+def get_long_description():
+    with open("README.md") as f:
+        return f.read()
 
 
 def get_requirements():
@@ -22,8 +22,8 @@ setup(
     url="https://github.com/jantic/DeOldify",
     license="MIT License",
     description=get_description(),
-    # long_description=get_long_description(),
-    # long_description_content_type="text/markdown",
+    long_description=get_long_description(),
+    long_description_content_type="text/markdown",
     classifiers=[
         "Development Status :: 4 - Beta",
         "Framework :: Jupyter",
